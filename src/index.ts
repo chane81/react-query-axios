@@ -1,5 +1,1 @@
-const useMyQuery = () => {
-  console.log('init setup');
-};
-
-export default useMyQuery;
+export * from '~/src/useQuery';
