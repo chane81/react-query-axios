@@ -1,0 +1,67 @@
+{
+  "name": "react-query-axios",
+  "version": "0.1.0",
+  "description": "react-query helper library (with axios)",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "test": "jest",
+    "test:w": "jest --colors --watchAll",
+    "lint": "eslint . --ext=tsx,ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chane81/react-query-axios"
+  },
+  "keywords": [
+    "react-query",
+    "axios"
+  ],
+  "author": "BM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chane81/react-query-axios/issues"
+  },
+  "homepage": "https://github.com/chane81/react-query-axios#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "axios": "^0.26.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.2",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.34.16",
+    "react-test-renderer": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "type-fest": "^2.12.0",
+    "typescript": "^4.6.2"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11"
+  }
+}
