@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "react", "@typescript-eslint", "simple-import-sort"],
+  "extends": ["prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "ts": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "no-unused-vars": "off",
+    "semi": ["error", "always"],
+    // Delete `␍`eslintprettier/prettier 대응
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "printWidth": 83
+      }
+    ]
+  }
+}
