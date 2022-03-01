@@ -18,15 +18,12 @@
     "noImplicitAny": false,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "~/utils/*": ["./src/utils/*"],
+      "~/src/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "lib",
-    "src/__tests__",
-    ".github",
-    ".vscode",
-    ".husky"
-  ]
+  "include": ["./src"],
+  "exclude": ["node_modules", "lib", ".github", ".vscode", ".husky"]
 }

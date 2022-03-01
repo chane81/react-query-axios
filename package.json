@@ -7,8 +7,8 @@
   "types": "./lib/esm/index.d.ts",
   "scripts": {
     "build": "rimraf lib && yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "build:esm": "tsc --project ./tsconfig.build.json",
+    "build:cjs": "tsc --project ./tsconfig.build.json --module commonjs --outDir lib/cjs",
     "test": "jest",
     "test:w": "jest --colors --watchAll",
     "lint": "eslint . --ext=tsx,ts --fix"
@@ -17,10 +17,7 @@
     "type": "git",
     "url": "https://github.com/chane81/react-query-axios"
   },
-  "keywords": [
-    "react-query",
-    "axios"
-  ],
+  "keywords": ["react-query", "axios"],
   "author": "BM",
   "license": "MIT",
   "bugs": {
@@ -45,6 +42,7 @@
     "@typescript-eslint/parser": "^5.13.0",
     "axios": "^0.26.0",
     "babel-jest": "^27.5.1",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-prettier": "^4.0.0",
