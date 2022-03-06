@@ -17,7 +17,10 @@
     "type": "git",
     "url": "https://github.com/chane81/react-query-axios"
   },
-  "keywords": ["react-query", "axios"],
+  "keywords": [
+    "react-query",
+    "axios"
+  ],
   "author": "BM",
   "license": "MIT",
   "bugs": {
@@ -49,6 +52,7 @@
     "eslint-plugin-react": "^7.29.2",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^27.5.1",
+    "nock": "^13.2.4",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

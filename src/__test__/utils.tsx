@@ -1,7 +1,8 @@
+import { WrapperComponent } from '@testing-library/react-hooks';
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
-const queryClient = new QueryClient({
+export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       // ✅ turns retries off
@@ -10,6 +11,6 @@ const queryClient = new QueryClient({
   },
 });
 
-export const wrapper = ({ children }) => (
+export const wrapper: WrapperComponent<any> = ({ children }) => (
   <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
 );
